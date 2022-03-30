@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <title>Document</title>
+    <style>
+        .colors {
+            background: linear-gradient(90deg, gray, silver);
+        }
+
+        .contenedor {
+            background-color: white;
+            /* align-content: space-around; */
+            margin: 5em;
+            width: 100%;
+            padding: 16px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .input1 {
+            display: flex;
+            flex-direction: column;
+            /* align-content: space-around; */
+            align-items: center;
+        }
+
+        #contcenter {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .input1 {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .contenedor {
+                width: 30em;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="colors">
+    <nav class="navbar">
+        <!-- <img src="logo.png" alt="" width="30px" height="30px"> -->
+        <a href="" class="navbar-brand">PubliCAST</a>
+        <button class="navbar-toggle" type="button">
+            <img src="icons/menu.png" alt="menu" style="width: 10px;">
+        </button>
+        <div class="navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="" class="nav-link">Ingresar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Registrarse</a>
+
+                </li> -->
+
+            </ul>
+        </div>
+    </nav>
+    <div class="contenedor">
+        <div id="contcenter">
+            <img src="img/login.png" alt="user" width="150">
+        </div>
+        <br>
+        <div class="input1">
+            <div><label for="Username">Correo o Nombre de usuario</label></div>
+            <div><input type="text" name="username"></div>
+        </div>
+        <br>
+
+        <div class="input1">
+            <label for="password">Contraseña</label>
+            <input type="password" nname="password">
+        </div>
+        <br>
+        <div id="contcenter">
+            <button>Iniciar secion</button>
+        </div>
+        <br><br><br>
+
+        <div id="contcenter">
+            <div>
+                <label for="">No tienes cuenta</label>
+                <a href="sing_up_Admin.html">Registrarse</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/framework.js"></script>
+
+</body>
+
+</html>
