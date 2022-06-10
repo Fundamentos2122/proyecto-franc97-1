@@ -1,0 +1,25 @@
+.show {
+    display: block;
+}
+
+.Coments {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: none;
+}
+
+.Coments::-webkit-scrollbar {
+    display: none;
+}
+
+.coments_Body {
+    max-width: 100%;
+    position: relative;
+    margin:1em auto;
+    background-color: white;
+    border-radius: 0.25em;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(15vh - 2em);
+}

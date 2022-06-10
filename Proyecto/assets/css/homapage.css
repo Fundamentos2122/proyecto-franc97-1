@@ -1,0 +1,257 @@
+.contenedor img {
+    position: relative;
+    width: 100%;
+    /* height: 100vh;  */
+}
+
+.slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 10px;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.slide-open:checked+.slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+}
+
+.slide-item img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    /* height: 100%; */
+    padding: 0.5em;
+}
+
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked~.control-1,
+#slide-2:checked~.control-2,
+#slide-3:checked~.control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+
+#slide-1:checked~.control-1~.slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked~.control-2~.slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked~.control-3~.slide-indicador li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    /* text-align: center;  */
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(-225deg, rgba(255, 5, 126, 0.475) 0%, #7c64d581 48%, rgba(76, 195, 255, 0.774) 100%), url("../img/fondocel.jpg");
+    /* img/pexels-tirachard-kumtanom-1001850.jpg */
+    /* background-image: linear-gradient(to right, rgba(146, 254, 157, 0.404) 0%, rgba(0, 200, 255, 0.651) 100%), url("assets/img/pexels-george-milton-6954162.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.texto-encima {
+    position: absolute;
+    top: 300px;
+    left: 35px;
+    color: white;
+    width: 20em;
+}
+
+.texto-encima p {
+    font-size: 0.8em;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.h1 {
+    font-size: 1em;
+}
+
+.centrado {
+    position: absolute;
+    top: 16.5em;
+    left: 40px;
+    color: aquamarine;
+    text-align: justify;
+    /* transform: translate(-50%, -50%); */
+}
+
+/* #imgcarrusel {
+    padding: 1em 7.5em;
+} */
+
+.title-slide {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+
+.colorse {
+    background: linear-gradient(90deg, rgba(182, 3, 63, 0.815), rgba(76, 195, 255, 0.897));
+    color: white;
+    height: 300px;
+    margin: 0;
+
+}
+
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.social-media-icons {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.social-media-icons:hover {
+    background-color: white;
+    color: #764ba2;
+}
+
+.social-media-icons i {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0;
+    height: 3px;
+    background: rgb(0, 0, 0);
+}
+
+.contenedore {
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 60px 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .texto-encima {
+        top: 200px;
+        left: 100px;
+
+    }
+
+    .centrado {
+        top: 100px;
+        left: 100px;
+    }
+
+    .texto-encima p {
+        font-size: 120%;
+    }
+
+    .title-slide {
+        font-size: 1.5em;
+    }
+
+    .slide-item img {
+        height: auto;
+        width: 30%;
+        /* height: 100%; */
+        padding: 1em;
+    }
+
+
+    .contenedore {
+        width: 100%;
+        /* max-width: 1200px; */
+        /* overflow: hidden; */
+    }
+
+    .footer-content {
+        width: 100%;
+        margin-bottom: 4px;
+
+    }
+
+
+    .header {
+        background-image: linear-gradient(-225deg, rgba(255, 5, 126, 0.475) 0%, #7c64d581 48%, rgba(76, 195, 255, 0.774) 100%), url("../img/pexels-george-milton-6954162.jpg");
+    }
+
+    #vision:hover {
+        color: black;
+    }
+}
